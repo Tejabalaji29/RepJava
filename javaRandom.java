@@ -22,7 +22,7 @@ public class Repg{
         Random random = new Random();
         StringBuilder emailName = new StringBuilder(EMAIL_NAME_LENGTH);
         for (int i = 0; i < EMAIL_NAME_LENGTH; i++) {
-            char randomChar = (char) (random.nextInt(26) + 'a'); // Generates a random lowercase letter
+            char randomChar = (char) (random.nextInt(26) + 'a'); 
             emailName.append(randomChar);
         }
         return emailName + DOMAIN;
